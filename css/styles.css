@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(26, 143, 18), rgb(216, 190, 59));
+}
+
+#mainWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border: 2px solid aqua;
+    /* padding: 20px; */
+}
+
+.wrapper {
+    margin: 30px 30px 10px 10px;
+    padding: 10px;
+}
+
+#wrapperAddNewUser {
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+}
+
+#wrapperEditUser {
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    position: absolute;
+    left: -500px;
+    top: 100px;
+    background-color: aqua;
+    z-index: 10;
+    transition: all 0.5s linear;
+}
+
+#wrapperDeleteUser {
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    position: absolute;
+    left: -500px;
+    top: 100px;
+    background-color: rgb(255, 213, 0);
+    z-index: 10;
+    transition: all 0.5s linear;
+}
+
+#error,
+#editError {
+    color: #ff0000;
+}
